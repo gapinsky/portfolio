@@ -15,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-neutral-900`}>{children}</body>
+      <body
+        className={`${inter.className} bg-neutral-900 max-w-[1920px] mx-auto`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

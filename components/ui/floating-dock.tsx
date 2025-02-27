@@ -70,7 +70,7 @@ const FloatingDockMobile = ({
                   href={item.href}
                   key={item.title}
                   target="blank"
-                  className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
+                  className="h-10 w-10 rounded-full bg-gray-50  flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
                 </Link>
@@ -81,7 +81,7 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center"
+        className="h-10 w-10 rounded-full bg-gray-50  flex items-center justify-center"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden z-50 fixed bottom-5 md:flex h-16 gap-4 items-end  rounded-2xl  bg-neutral-700 px-4 pb-3",
+        "mx-auto hidden z-50 fixed bottom-5 md:flex h-16 gap-4 items-end bg-neutral-700 rounded-2xl   px-4 pb-3",
         className
       )}
     >
@@ -185,7 +185,7 @@ function IconContainer({
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="aspect-square  rounded-full bg-neutral-500 flex items-center justify-center relative"
+        className="aspect-square  rounded-full bg-neutral-500/50 flex items-center justify-center relative"
       >
         <AnimatePresence>
           {hovered && (

@@ -28,7 +28,7 @@ const ProjectCard = ({ title, image, description, tools, link }: Props) => {
         />
       </div>
       <div className="text-neutral-300 min-h-64 my-5 xl:m-5 flex-1">
-        <p className="text-lg xl:text-xl">{title.toLocaleUpperCase()}</p>
+        <p className="text-lg  xl:text-2xl">{title.toLocaleUpperCase()}</p>
         <p className="mb-2 xl:text-lg xl:my-2">
           {text}{" "}
           <button

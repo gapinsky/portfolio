@@ -8,7 +8,7 @@ const AboutMe = () => {
   return (
     <section
       id="/about"
-      className="relative overflow-hidden text-neutral-300 flex flex-col justify-around min-h-svh py-5  px-8 gap-16 md:gap-0 md:px-16 xl:px-32"
+      className="relative overflow-hidden text-neutral-300 flex flex-col justify-evenly min-h-svh py-5  px-8 gap-16 md:gap-0 md:px-16 xl:px-32"
     >
       <Shadow />
       <SectionHeader>About me</SectionHeader>
