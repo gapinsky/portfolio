@@ -1,6 +1,6 @@
 import Image from "next/image";
 import profileImg from "../../../public/noImage.png";
-import { MapPin, Send } from "lucide-react";
+import { FileUser, MapPin, Send } from "lucide-react";
 import Carousel from "./Carousel";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Shadow from "./Shadow";
@@ -65,6 +65,12 @@ const AboutMe = () => {
             </p>
             <p className="flex items-center mb-3 ">
               <Send className="mr-2 text-emerald-500" /> gapinski02@gmail.com
+            </p>
+            <p className="flex items-center mb-3 ">
+              <FileUser className="mr-2 text-emerald-500" />{" "}
+              <a href="" download className="cursor-pointer">
+                Download resume
+              </a>
             </p>
           </div>
         </div>
