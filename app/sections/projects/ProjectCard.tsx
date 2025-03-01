@@ -33,14 +33,16 @@ const ProjectCard = ({ title, image, description, tools, link }: Props) => {
         },
       }}
       viewport={{ once: true, amount: 0.5 }}
-      className=" flex flex-col h-fit    bg-neutral-800 overflow-hidden rounded-2xl max-w-sm md:max-w-lg  xl:max-w-xl "
+      className=" flex flex-col  h-fit    bg-neutral-800 overflow-hidden rounded-lg  md:max-w-lg  xl:max-w-xl "
     >
-      <div className="relative h-56 overflow-hidden   ">
+      <div className="relative  xl:h-72 overflow-hidden   ">
         <Image
           src={image}
-          fill
+          height={50}
+          width={300}
+          layout="responsive"
           alt={`${title} website thumbnail`}
-          className="hover:scale-110 transition-transform duration-300 "
+          className="hover:scale-110 object-contain transition-transform duration-300 "
         />
       </div>
       <div className="text-neutral-300  p-5  flex-1">

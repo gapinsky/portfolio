@@ -49,7 +49,7 @@ const Form = () => {
         ></textarea>
       </div>
       <p className="text-end">
-        <button className="bg-gradient-to-tr from-emerald-400 via-emerald-400/50 to-emerald-400/30 px-3 py-1 shadow-md shadow-black/50 rounded-md xl:text-lg">
+        <button className="bg-gradient-to-tr from-emerald-400 via-emerald-400/50 to-emerald-400/30 px-3 py-1 shadow-md shadow-black/50 rounded-md xl:text-lg hover:bg-emerald-900">
           Submit
         </button>
       </p>
