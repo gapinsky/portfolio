@@ -2,7 +2,6 @@ import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { motion } from "motion/react";
-import { animationVariants } from "../aboutMe/AboutMe";
 
 type Props = {
   title: string;
@@ -21,21 +20,30 @@ const ProjectCard = ({ title, image, description, tools, link }: Props) => {
 
   return (
     <motion.div
-      variants={animationVariants}
-      initial="initial"
-      whileInView="visible"
-      viewport={{ ...animationVariants.viewport }}
-      className="h-fit flex flex-col border-neutral-900 mt-20 px-5 pb-3  bg-neutral-800  rounded-2xl max-w-sm md:max-w-lg xl:pb-5 xl:max-w-xl"
+      initial={{ y: 100, opacity: 0, scale: 0.9 }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        transition: {
+          duration: 1,
+          type: "spring",
+          bounce: 0.3,
+          delay: 0.3,
+        },
+      }}
+      viewport={{ once: true, amount: 0.5 }}
+      className=" flex flex-col h-fit    bg-neutral-800 overflow-hidden rounded-2xl max-w-sm md:max-w-lg  xl:max-w-xl "
     >
-      <div className="relative h-56 -mt-16 xl:mx-5  ">
+      <div className="relative h-56 overflow-hidden   ">
         <Image
           src={image}
           fill
           alt={`${title} website thumbnail`}
-          className=" rounded-2xl "
+          className="hover:scale-110 transition-transform duration-300 "
         />
       </div>
-      <div className="text-neutral-300 min-h-64 my-5 xl:m-5 flex-1">
+      <div className="text-neutral-300  p-5  flex-1">
         <p className="text-lg  xl:text-2xl">{title.toLocaleUpperCase()}</p>
         <p className="mb-2 xl:text-lg xl:my-2">
           {text}{" "}
@@ -47,7 +55,7 @@ const ProjectCard = ({ title, image, description, tools, link }: Props) => {
           </button>
         </p>
         <p className="mb-1">Tools:</p>
-        <div className=" flex flex-wrap  px-1 gap-2 ">
+        <div className=" flex flex-wrap items-start  px-1 gap-2 min-h-16 ">
           {tools.map((tool, id) => (
             <span
               key={id}
@@ -57,15 +65,15 @@ const ProjectCard = ({ title, image, description, tools, link }: Props) => {
             </span>
           ))}
         </div>
+        <a
+          href={link}
+          target="blank"
+          className="flex w-fit ml-auto bg-gradient-to-tr text-neutral-300 from-emerald-400 via-emerald-400/50 to-emerald-400/30 px-2 py-0.5 rounded-md xl:text-lg"
+        >
+          Visit
+          <ExternalLink className="ml-1 scale-90" />
+        </a>
       </div>
-      <a
-        href={link}
-        target="blank"
-        className="flex ml-auto bg-gradient-to-tr text-neutral-300 from-emerald-400 via-emerald-400/50 to-emerald-400/30 px-2 py-0.5 rounded-md xl:text-lg"
-      >
-        Visit
-        <ExternalLink className="ml-1 scale-90" />
-      </a>
     </motion.div>
   );
 };

@@ -1,11 +1,23 @@
 // "use client";
 // import React from "react";
-
+import { motion } from "motion/react";
 const Form = () => {
   return (
-    <form
+    <motion.form
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 1,
+          type: "spring",
+          bounce: 0.3,
+          delay: 0.5,
+        },
+      }}
+      viewport={{ once: true, amount: 0.3 }}
       action=""
-      className=" rounded-lg p-5 text-neutral-300 bg-neutral-800 w-[85%] shadow-lg shadow-neutral-900 md:w-[45%]  lg:w-[40%] xl:w-[25%] xl:text-xl xl:p-8 "
+      className=" rounded-lg p-5 text-neutral-300 bg-neutral-800 w-[85%] shadow-lg shadow-neutral-900 md:w-[45%]  lg:w-[40%] xl:w-[25%] xl:text-xl xl:p-5 "
     >
       <p className="flex flex-col mb-5 md:mb-7 xl:mb-10">
         <label htmlFor="" className="mb-1">
@@ -41,7 +53,7 @@ const Form = () => {
           Submit
         </button>
       </p>
-    </form>
+    </motion.form>
   );
 };
 

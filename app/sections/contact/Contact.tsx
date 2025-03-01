@@ -3,12 +3,14 @@ import Form from "./Form";
 import PaperPlane from "./PaperPlane";
 import React from "react";
 import { motion } from "motion/react";
+import SectionHeader from "@/components/ui/SectionHeader";
 const Contact = () => {
   return (
     <section
       id="/contact"
-      className="relative py-10  flex flex-col items-center justify-center md:px-5  lg:px-10  min-h-svh  "
+      className="relative py-10  flex flex-col items-center justify-evenly md:px-10  lg:px-10  min-h-svh "
     >
+      <SectionHeader>let's keep in touch</SectionHeader>
       <div className=" w-full flex flex-col items-center justify-center gap-16 md:flex-row md:items-start md:gap-8 lg:justify-evenly xl:justify-center  xl:gap-36">
         <div className="  px-5 text-6xl  font-bold uppercase  w-[90%] space-y-2 md:w-fit md:text-7xl md:px-0 lg:text-8xl md:space-y-4  xl:text-9xl">
           <motion.p
