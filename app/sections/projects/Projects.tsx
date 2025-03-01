@@ -3,6 +3,7 @@ import SectionHeader from "../../../components/ui/SectionHeader";
 import ProjectCard from "./ProjectCard";
 import { projectsList } from "./projectsList";
 
+
 const Projects = () => {
   return (
     <section

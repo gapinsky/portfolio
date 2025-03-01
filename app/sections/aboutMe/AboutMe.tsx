@@ -4,6 +4,19 @@ import { FileUser, MapPin, Send } from "lucide-react";
 import Carousel from "./Carousel";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Shadow from "./Shadow";
+import { motion } from "motion/react";
+
+export const animationVariants = {
+  initial: { scale: 0.5, opacity: 0, y: "20%" },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, type: "spring", bounce: 0.3 },
+  },
+  viewport: { once: true, amount: 0.8 },
+};
+
 const AboutMe = () => {
   return (
     <section
@@ -11,10 +24,16 @@ const AboutMe = () => {
       className="relative overflow-hidden text-neutral-300 flex flex-col justify-evenly min-h-svh py-5  px-8 gap-16 md:gap-0 md:px-16 xl:px-32"
     >
       <Shadow />
-      <SectionHeader>About me</SectionHeader>
+      <SectionHeader>Get to know me</SectionHeader>
       <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 xl:grid-cols-12 xl:grid-rows-1">
-        <div className=" p-3  md:order-1 md:col-span-7 xl:order-2 xl:col-span-4  xl:pl-6 xl:pt-5 ">
-          {/* <p className="mb-1 text-xl xl:text-2xl">About me</p> */}
+        <motion.div
+          className=" p-3 order-2  md:order-1 md:col-span-7 xl:order-2 xl:col-span-4  xl:pl-6 xl:pt-5 "
+          variants={animationVariants}
+          initial="initial"
+          whileInView="visible"
+          viewport={{ ...animationVariants.viewport }}
+        >
+          <p className="mb-1 text-xl xl:text-2xl">About me</p>
           <p className="p-1 xl:text-xl ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
             suscipit autem saepe incidunt labore dignissimos cumque illum ullam
@@ -24,8 +43,14 @@ const AboutMe = () => {
             autem architecto asperiores nulla doloribus maiores porro sapiente
             quae quidem incidunt nobis neque fugiat veritatis? Mollitia, numquam
           </p>
-        </div>
-        <div className=" p-3 md:order-3 md:col-span-7  xl:col-span-3 xl:px-8 xl:order-4 xl:pt-5">
+        </motion.div>
+        <motion.div
+          className=" p-3 order-4 md:order-3 md:col-span-7  xl:col-span-3 xl:px-8 xl:order-4 xl:pt-5"
+          variants={animationVariants}
+          initial="initial"
+          whileInView="visible"
+          viewport={{ ...animationVariants.viewport }}
+        >
           <p className="text-xl mb-1 xl:text-2xl">Soft Skills: </p>
           <ul className=" ml-1 space-y-2 tracking-tight xl:text-xl">
             <li>English - B2</li>
@@ -36,8 +61,14 @@ const AboutMe = () => {
             <li>Willingness to learn and self-reliance</li>
             <li>Problem solving and logical thinking</li>
           </ul>
-        </div>
-        <div className=" p-3 md:order-4  md:col-span-5 xl:px-8 xl:col-span-2  xl:order-3 xl:pt-5 ">
+        </motion.div>
+        <motion.div
+          className=" p-3 order-3 md:order-4  md:col-span-5 xl:px-8 xl:col-span-2  xl:order-3 xl:pt-5 "
+          variants={animationVariants}
+          initial="initial"
+          whileInView="visible"
+          viewport={{ ...animationVariants.viewport }}
+        >
           <p className="text-emerald-500 mb-1 text-xl xl:text-2xl">
             Technical skills:
           </p>
@@ -52,8 +83,14 @@ const AboutMe = () => {
             <li>Tailwind</li>
             <li>HTML/CSS/JS</li>
           </ul>
-        </div>
-        <div className=" p-3  md:order-2 md:col-span-5 xl:order-1 xl:col-span-3 ">
+        </motion.div>
+        <motion.div
+          className=" p-3 order-1 md:order-2 md:col-span-5 xl:order-1 xl:col-span-3 "
+          variants={animationVariants}
+          initial="initial"
+          whileInView="visible"
+          viewport={{ ...animationVariants.viewport }}
+        >
           <Image
             src={profileImg}
             alt="My portrait picture"
@@ -73,7 +110,7 @@ const AboutMe = () => {
               </a>
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
       <Carousel />
     </section>

@@ -17,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${inter.className} bg-neutral-900 max-w-[1920px] mx-auto`}
+        cz-shortcut-listen="true"
       >
         {children}
       </body>

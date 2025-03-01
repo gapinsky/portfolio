@@ -39,10 +39,10 @@ const Carousel = () => {
     <div className="relative overflow-hidden">
       <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full z-10 blur-lg bg-neutral-900 h-[200%] w-[10%]"></div>
       <div className="absolute top-1/2 -translate-y-1/2 right-0 rounded-full z-10 blur-lg translate-x-1/2 bg-neutral-900 h-[200%] w-[10%]"></div>
-      <div className="overflow-hidden  pointer-events-none flex   text-neutral-200 gap-24 py-2  ">
-        <ul className="flex justify-between items-center min-w-full shrink-0 gap-4 carousel select-none ">
+      <div className="overflow-hidden  pointer-events-none flex   text-neutral-200 gap-12 py-2  xl:gap-24">
+        <ul className="flex justify-between items-center min-w-full shrink-0 gap-12 carousel select-none ">
           {items.map((item, id) => (
-            <li key={id} className="flex items-center text-xl ">
+            <li key={id} className="flex items-center text-lg lg:text-xl ">
               <Image
                 className="mr-2"
                 src={item.source}
@@ -54,9 +54,9 @@ const Carousel = () => {
             </li>
           ))}
         </ul>
-        <ul className="flex justify-between items-center min-w-full shrink-0 gap-4 carousel select-none ">
+        <ul className="flex justify-between items-center min-w-full shrink-0 gap-12 carousel select-none ">
           {items.map((item, id) => (
-            <li key={id} className="flex items-center text-xl">
+            <li key={id} className="flex items-center text-lg lg:text-xl">
               <Image
                 className="mr-2"
                 src={item.source}

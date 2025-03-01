@@ -9,17 +9,17 @@ const PaperPlane = () => {
       viewBox="0 0 203.228 203.228"
       fill="#10B98180"
       stroke="#000000"
-      stroke-width="0.00203228"
+      strokeWidth="0.00203228"
       transform=" rotate(-10)"
       className="absolute scale-0 md:scale-100 md:right-14 md:top-48 lg:right-20 lg:top-80 xl:right-20 xl:top-20 -z-10"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         stroke="#ffffff"
-        stroke-width="2.438736"
+        strokeWidth="2.438736"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}

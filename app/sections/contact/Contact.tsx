@@ -1,19 +1,79 @@
-import SectionHeader from "@/components/ui/SectionHeader";
+"use client";
 import Form from "./Form";
 import PaperPlane from "./PaperPlane";
-
+import React from "react";
+import { motion } from "motion/react";
 const Contact = () => {
   return (
     <section
       id="/contact"
-      className="relative py-10  flex flex-col items-center justify-center md:px-5  lg:px-10  min-h-svh "
+      className="relative py-10  flex flex-col items-center justify-center md:px-5  lg:px-10  min-h-svh  "
     >
-      <div className=" w-full flex flex-col items-center justify-center gap-16 md:flex-row md:items-start md:gap-8 lg:justify-evenly xl:justify-center xl:gap-24">
-        <div className=" px-5 text-6xl bg-gradient-to-br from-neutral-400 via-neutral-400 to-neutral-800 bg-clip-text text-transparent font-bold uppercase text-start w-[90%] space-y-2 md:w-fit md:text-7xl md:px-0 lg:text-8xl md:space-y-4 xl:px-2 xl:text-9xl">
-          <p className=" tracking-tight ">Write</p>
-          <p className=" tracking-tighter">Refactor</p>
-          <p className=" tracking-tighter">Repeat</p>
-          <p className="text-3xl text-emerald-600">Let's collaborate!</p>
+      <div className=" w-full flex flex-col items-center justify-center gap-16 md:flex-row md:items-start md:gap-8 lg:justify-evenly xl:justify-center  xl:gap-36">
+        <div className="  px-5 text-6xl  font-bold uppercase  w-[90%] space-y-2 md:w-fit md:text-7xl md:px-0 lg:text-8xl md:space-y-4  xl:text-9xl">
+          <motion.p
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: { duration: 1, type: "spring", bounce: 0.3 },
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className=" tracking-tight bg-gradient-to-br from-neutral-400 via-neutral-400 to-neutral-800 bg-clip-text text-transparent lg:pr-4"
+          >
+            Write
+          </motion.p>
+          <motion.p
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 1,
+                type: "spring",
+                bounce: 0.3,
+                delay: 0.3,
+              },
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className=" tracking-tighter bg-gradient-to-br from-neutral-400 via-neutral-400 to-neutral-800 bg-clip-text text-transparent lg:pr-4"
+          >
+            Refactor
+          </motion.p>
+          <motion.p
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 1,
+                type: "spring",
+                bounce: 0.3,
+                delay: 0.6,
+              },
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className=" tracking-tighter bg-gradient-to-br from-neutral-400 via-neutral-400 to-neutral-800 bg-clip-text text-transparent lg:pr-4"
+          >
+            Repeat
+          </motion.p>
+          <motion.p
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 1,
+                type: "spring",
+                bounce: 0.3,
+                delay: 0.9,
+              },
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className="text-3xl text-emerald-600 xl:pl-2"
+          >
+            Let's collaborate!
+          </motion.p>
         </div>
         <Form />
       </div>

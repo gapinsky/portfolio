@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 import { useState } from "react";
+import { motion } from "motion/react";
+import { animationVariants } from "../aboutMe/AboutMe";
 
 type Props = {
   title: string;
@@ -18,7 +20,13 @@ const ProjectCard = ({ title, image, description, tools, link }: Props) => {
   };
 
   return (
-    <div className="h-fit flex flex-col border-neutral-900 mt-20 px-5 pb-3  bg-neutral-800  rounded-2xl max-w-sm md:max-w-lg xl:pb-5 xl:max-w-xl">
+    <motion.div
+      variants={animationVariants}
+      initial="initial"
+      whileInView="visible"
+      viewport={{ ...animationVariants.viewport }}
+      className="h-fit flex flex-col border-neutral-900 mt-20 px-5 pb-3  bg-neutral-800  rounded-2xl max-w-sm md:max-w-lg xl:pb-5 xl:max-w-xl"
+    >
       <div className="relative h-56 -mt-16 xl:mx-5  ">
         <Image
           src={image}
@@ -58,7 +66,7 @@ const ProjectCard = ({ title, image, description, tools, link }: Props) => {
         Visit
         <ExternalLink className="ml-1 scale-90" />
       </a>
-    </div>
+    </motion.div>
   );
 };
 

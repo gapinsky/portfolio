@@ -1,3 +1,6 @@
+// "use client";
+// import React from "react";
+
 const Form = () => {
   return (
     <form
@@ -12,7 +15,7 @@ const Form = () => {
           type="text"
           className="rounded-sm p-2 bg-neutral-600 shadow-sm shadow-neutral-900  "
         />
-        <span></span>
+        <span>huj</span>
       </p>
       <p className="flex flex-col mb-5 md:mb-7 xl:mb-10">
         <label htmlFor="" className="mb-1">

@@ -138,6 +138,6 @@ html {
 
 @keyframes carouselScroll {
   to {
-    transform: translateX(calc(-100% - 6rem));
+    transform: translateX(calc(-100% - 3rem));
   }
 }

@@ -5,6 +5,8 @@ import { Nav } from "./Nav";
 import ButtonHero from "./ButtonHero";
 import ButtonGlow from "./ButtonGlow";
 import { FloatingDockComponent } from "./FloatingDock";
+import { motion } from "motion/react";
+import { easeIn } from "motion";
 
 export function Hero() {
   return (
@@ -15,7 +17,22 @@ export function Hero() {
       <div className="magicpattern absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-15 "></div>
       <Nav />
       <Spotlight />
-      <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+      <motion.div
+        initial={{ scale: 0, opacity: 0, y: 100 }}
+        animate={{
+          scale: 1,
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: 0.5,
+            duration: 1,
+            ease: easeIn,
+            type: "spring",
+            bounce: 0.3,
+          },
+        }}
+        className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0"
+      >
         <h1 className="text-2xl md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
           Hello, I'm Antoni Gapiński <br />{" "}
           <p className="mt-2 bg-gradient-to-tr from-emerald-300/50 via-emerald-500 to-emerald-900/50 bg-clip-text">
@@ -30,7 +47,7 @@ export function Hero() {
           <ButtonHero>Projects</ButtonHero>
           <ButtonGlow>Meet me</ButtonGlow>
         </div>
-      </div>
+      </motion.div>
       <FloatingDockComponent />
     </section>
   );
