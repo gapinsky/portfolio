@@ -13,7 +13,7 @@ type Props = {
 
 const ProjectCard = ({ title, image, description, tools, link }: Props) => {
   const [isExpand, setIsExpand] = useState(false);
-  let text = isExpand ? description : `${description.slice(0, 200)}...`;
+  let text = isExpand ? description : `${description.slice(0, 183)}...`;
   const handleExpand = () => {
     setIsExpand((prevState) => !prevState);
   };
@@ -26,7 +26,7 @@ const ProjectCard = ({ title, image, description, tools, link }: Props) => {
         opacity: 1,
         scale: 1,
         transition: {
-          duration: 1,
+          duration: 1, 
           type: "spring",
           bounce: 0.3,
           delay: 0.3,

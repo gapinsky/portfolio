@@ -18,28 +18,26 @@ export const projectsList = [
   },
   {
     title: "E-commerce",
-    description:
-      "placeholder randomw orsds wgdgerg placeholder randomw orsds wgdgerg placeholder randomw orsds wgdgerg placeholder randomw orsds wgdgerg placeholder randomw orsds wgdgerg ",
-    // image: "/thumbnails/kmtechfixThumbnail.webp",
-    image: "/noImage.png",
+    description: `An e-commerce application built using FakeStoreAPI. API requests are handled with React Query. Each product category has its own subpage with a list of products and pagination. Products can be sorted by price (ascending or descending) or alphabetically.
+       Each product has a dedicated subpage with more details and the option to add it to the cart. React Router is used for routing. The cart state is managed via a custom hook and shared between components using Context API.
+        In the cart, users can adjust product quantities, remove items, and apply a discount code. The total cart value and product count are updated in real time. After completing a transaction, the app returns an array of product objects that were added to the cart.`,
+    image: "/thumbnails/ecommerceThumbnail.webp",
     tools: [
       "React",
       "Typescript",
       "Tailwind",
-      "Motion",
-      "Zod",
-      "React Hook Form",
-      "Figma",
-      "EmailJS",
+      "React Query",
+      "React Router",
+      "Context API",
+      "Rest API",
     ],
-    link: "https://kmechfix.vercel.app/",
+    link: "https://fake-store-b4pj.vercel.app/",
   },
   {
     title: "Portfolio Website",
     description:
-      "placeholder randomw orsds wgdgerg placeholder randomw orsds wgdgerg placeholder randomw orsds wgdgerg placeholder randomw orsds wgdgerg placeholder randomw orsds wgdgerg ",
-    // image: "/thumbnails/kmtechfixThumbnail.webp",
-    image: "/noImage.png",
+      "My first project built with nextJS. I chose nextJs because of the AcernityUi component library which I really wanted to try out. I also didn't want to use external libraries to handle emails (emailJS) as I had done in previous projects, and nextJS has that capability built in. I designed the look of the application myself in Figma. I think this is a valuable project demonstrating my ability to work with new technologies (nextJS), libraries (AcernityUI) and technical documentation.",
+    image: "/thumbnails/portfolioThumbnail.webp",
     tools: [
       "NextJS",
       "Typescript",
