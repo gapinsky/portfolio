@@ -35,13 +35,12 @@ const AboutMe = () => {
         >
           <p className="mb-1 text-xl xl:text-2xl">About me</p>
           <p className="p-1 xl:text-xl ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
-            suscipit autem saepe incidunt labore dignissimos cumque illum ullam
-            possimus doloremque, quisquam obcaecati debitis veritatis beatae,
-            nisi molestias minus ex rem magnam nesciunt. Saepe eius voluptatem
-            quo in consequatur molestiae sequi quaerat iure quibusdam facilis,
-            autem architecto asperiores nulla doloribus maiores porro sapiente
-            quae quidem incidunt nobis neque fugiat veritatis? Mollitia, numquam
+            I love learning new technologies and testing them in practice. My
+            specialty is React, TypeScript, and Tailwind, but I enjoy exploring
+            other frontend tools and libraries. I value well-written code,
+            application performance, and intuitive interfaces. I’m not afraid of
+            challenges and constantly improve my skills to deliver the best
+            possible solutions.
           </p>
         </motion.div>
         <motion.div
@@ -54,12 +53,13 @@ const AboutMe = () => {
           <p className="text-xl mb-1 xl:text-2xl">Soft Skills: </p>
           <ul className=" ml-1 space-y-2 tracking-tight xl:text-xl">
             <li>English - B2</li>
-            <li>Well-developed interpersonal skills</li>
+            <li>Problem solving and logical thinking</li>
             <li>
               Ability to work with technical <br /> documentation
             </li>
             <li>Willingness to learn and self-reliance</li>
-            <li>Problem solving and logical thinking</li>
+            <li>Communication and teamwork</li>
+            <li>Well-developed interpersonal skills</li>
           </ul>
         </motion.div>
         <motion.div
@@ -73,15 +73,86 @@ const AboutMe = () => {
             Technical skills:
           </p>
           <ul className=" ml-1 space-y-2 xl:text-xl">
-            <li>React.js</li>
-            <li>React Router</li>
-            <li>React Query</li>
-            <li>Redux</li>
-            <li>Jest</li>
-            <li>Typescript</li>
-            <li>Rest API</li>
-            <li>Tailwind</li>
-            <li>HTML/CSS/JS</li>
+            <li className="flex items-center ">
+              <Image
+                src="/icons/react.png"
+                alt="react.js icon"
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              React.js
+            </li>
+            <li className="flex items-center ">
+              <Image
+                src="/icons/ts.png"
+                alt="react.js icon"
+                width={20}
+                height={20}
+                className="mr-2 "
+              />
+              Typescript
+            </li>
+            <li className="flex items-center ">
+              <Image
+                src="/icons/router.png"
+                alt="react.js icon"
+                width={20}
+                height={20}
+                className="mr-2 bg-white rounded-sm"
+              />
+              React Router
+            </li>
+            <li className="flex items-center ">
+              <Image
+                src="/icons/redux.png"
+                alt="react.js icon"
+                width={20}
+                height={20}
+                className="mr-2 "
+              />
+              Redux
+            </li>
+            <li className="flex items-center ">
+              <Image
+                src="/icons/tailwind.png"
+                alt="react.js icon"
+                width={20}
+                height={20}
+                className="mr-2 "
+              />
+              Tailwind
+            </li>
+            <li className="flex items-center ">
+              <Image
+                src="/icons/js.png"
+                alt="react.js icon"
+                width={20}
+                height={20}
+                className="mr-2 "
+              />
+              Javascript
+            </li>
+            <li className="flex items-center ">
+              <Image
+                src="/icons/css.png"
+                alt="react.js icon"
+                width={20}
+                height={20}
+                className="mr-2 "
+              />
+              CSS
+            </li>
+            <li className="flex items-center ">
+              <Image
+                src="/icons/html.png"
+                alt="react.js icon"
+                width={20}
+                height={20}
+                className="mr-2 "
+              />
+              HTML
+            </li>
           </ul>
         </motion.div>
         <motion.div

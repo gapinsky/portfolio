@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { useState } from "react";
 import { motion } from "motion/react";
 
@@ -9,9 +9,17 @@ type Props = {
   description: string;
   tools: string[];
   link: string;
+  github: string;
 };
 
-const ProjectCard = ({ title, image, description, tools, link }: Props) => {
+const ProjectCard = ({
+  title,
+  image,
+  description,
+  tools,
+  link,
+  github,
+}: Props) => {
   const [isExpand, setIsExpand] = useState(false);
   let text = isExpand ? description : `${description.slice(0, 183)}...`;
   const handleExpand = () => {
@@ -26,7 +34,7 @@ const ProjectCard = ({ title, image, description, tools, link }: Props) => {
         opacity: 1,
         scale: 1,
         transition: {
-          duration: 1, 
+          duration: 1,
           type: "spring",
           bounce: 0.3,
           delay: 0.3,
@@ -57,7 +65,7 @@ const ProjectCard = ({ title, image, description, tools, link }: Props) => {
           </button>
         </p>
         <p className="mb-1">Tools:</p>
-        <div className=" flex flex-wrap items-start  px-1 gap-2 min-h-16 ">
+        <div className=" flex flex-wrap items-start  px-1 gap-2 min-h-16 mb-5 ">
           {tools.map((tool, id) => (
             <span
               key={id}
@@ -67,14 +75,23 @@ const ProjectCard = ({ title, image, description, tools, link }: Props) => {
             </span>
           ))}
         </div>
-        <a
-          href={link}
-          target="blank"
-          className="flex w-fit ml-auto bg-gradient-to-tr text-neutral-300 from-emerald-400 via-emerald-400/50 to-emerald-400/30 px-2 py-0.5 rounded-md xl:text-lg"
-        >
-          Visit
-          <ExternalLink className="ml-1 scale-90" />
-        </a>
+        <div className=" flex items-center justify-end">
+          <a
+            href={github}
+            target="blank"
+            className="px-2 py-0.5 rounded-md xl:text-lg bg-neutral-300 text-neutral-800 mr-5 "
+          >
+            Source code
+          </a>
+          <a
+            href={link}
+            target="blank"
+            className="flex w-fit bg-gradient-to-tr text-neutral-300 from-emerald-400 via-emerald-400/50 to-emerald-400/30 px-2 py-0.5 rounded-md xl:text-lg"
+          >
+            Visit
+            <ExternalLink className="ml-1 scale-90" />
+          </a>
+        </div>
       </div>
     </motion.div>
   );

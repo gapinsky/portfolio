@@ -4,6 +4,7 @@ import PaperPlane from "./PaperPlane";
 import React from "react";
 import { motion } from "motion/react";
 import SectionHeader from "@/components/ui/SectionHeader";
+import { Toaster } from "sonner";
 const Contact = () => {
   return (
     <section
@@ -81,6 +82,7 @@ const Contact = () => {
       </div>
       <PaperPlane />
       <div className="absolute w-[30%] aspect-square bg-white/5 rounded-full blur-3xl lg:right-24 xl:right-0 xl:bottom-0 -z-10"></div>
+      <Toaster />
     </section>
   );
 };
