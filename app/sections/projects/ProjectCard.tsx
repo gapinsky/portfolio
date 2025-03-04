@@ -21,7 +21,7 @@ const ProjectCard = ({
   github,
 }: Props) => {
   const [isExpand, setIsExpand] = useState(false);
-  let text = isExpand ? description : `${description.slice(0, 183)}...`;
+  let text = isExpand ? description : `${description.slice(0, 153)}...`;
   const handleExpand = () => {
     setIsExpand((prevState) => !prevState);
   };
@@ -43,7 +43,7 @@ const ProjectCard = ({
       viewport={{ once: true, amount: 0.5 }}
       className=" flex flex-col  h-fit    bg-neutral-800 overflow-hidden rounded-lg  md:max-w-lg  xl:max-w-xl "
     >
-      <div className="relative  xl:h-72 overflow-hidden   ">
+      <div className="relative   overflow-hidden   ">
         <Image
           src={image}
           height={50}
