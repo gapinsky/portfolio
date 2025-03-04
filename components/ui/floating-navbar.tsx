@@ -8,6 +8,13 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+export const scrollToSection = (id: string) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 export const FloatingNav = ({
   navItems,
   className,
@@ -58,19 +65,19 @@ export const FloatingNav = ({
           className
         )}
       >
-        {navItems.map((navItem, idx: number) => (
-          <a
-            key={`link=${idx}`}
-            href={`#${navItem.link}`}
+        {navItems.map((navItem, id: number) => (
+          <button
+            key={`link=${id}`}
+            onClick={() => scrollToSection(navItem.link)}
             className={cn(
               "relative text-neutral-200 items-center flex space-x-1   hover:text-emerald-400  "
             )}
           >
             <span className="text-xs md:text-base">{navItem.name}</span>
-          </a>
+          </button>
         ))}
         <a
-          href=""
+          href="/pdf/antoni_gapinski_resume.pdf"
           download
           className="bg-gradient-to-tr from-emerald-400 via-emerald-400/50 to-emerald-400/30 text-white px-3 rounded-full text-xs md:text-base"
         >

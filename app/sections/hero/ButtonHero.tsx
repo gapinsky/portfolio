@@ -1,11 +1,13 @@
+import { scrollToSection } from "@/components/ui/floating-navbar";
 import { ReactNode } from "react";
 interface Props {
   children: ReactNode;
 }
+
 const ButtonHero = ({ children }: Props) => {
   return (
-    <a
-      href="#/projects"
+    <button
+      onClick={() => scrollToSection("/projects")}
       className="bg-slate-800 no-underline group cursor-pointer relative shadow-xl shadow-neutral-800 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block md:text-base lg:text-lg"
     >
       <span className="absolute inset-0 overflow-hidden rounded-full">
@@ -15,7 +17,7 @@ const ButtonHero = ({ children }: Props) => {
         <span className="font-normal">{children}</span>
       </div>
       <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
-    </a>
+    </button>
   );
 };
 

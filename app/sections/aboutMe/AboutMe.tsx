@@ -176,7 +176,7 @@ const AboutMe = () => {
             </p>
             <p className="flex items-center mb-3 ">
               <FileUser className="mr-2 text-emerald-500" />{" "}
-              <a href="" download className="cursor-pointer">
+              <a href="/pdf/antoni_gapinski_resume.pdf" download>
                 Download resume
               </a>
             </p>
