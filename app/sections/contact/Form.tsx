@@ -36,7 +36,6 @@ const Form = () => {
   } = useForm({ resolver: zodResolver(schema) });
 
   const [isLoading, setIsLoading] = useState(false);
-  const [isSent, setIsSent] = useState(false);
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     setIsLoading(true);
@@ -62,7 +61,6 @@ const Form = () => {
           );
         },
         function (error) {
-          console.log(error);
           setIsLoading(false);
           toast("⚠️ Something went wrong, Your message was not sent.");
         }

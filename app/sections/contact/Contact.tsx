@@ -11,7 +11,7 @@ const Contact = () => {
       id="/contact"
       className="relative py-10  flex flex-col items-center justify-evenly md:px-10  lg:px-10  min-h-svh "
     >
-      <SectionHeader>let's keep in touch</SectionHeader>
+      <SectionHeader>let&apos;s keep in touch</SectionHeader>
       <div className=" w-full flex flex-col items-center justify-center gap-16 md:flex-row md:items-start md:gap-8 lg:justify-evenly xl:justify-center  xl:gap-36">
         <div className="  px-5 text-6xl  font-bold uppercase  w-[90%] space-y-2 md:w-fit md:text-7xl md:px-0 lg:text-8xl md:space-y-4  xl:text-9xl">
           <motion.p
@@ -75,7 +75,7 @@ const Contact = () => {
             viewport={{ once: true, amount: 0.5 }}
             className="text-3xl text-emerald-600 xl:pl-2"
           >
-            Let's collaborate!
+            Let&apos;s collaborate!
           </motion.p>
         </div>
         <Form />

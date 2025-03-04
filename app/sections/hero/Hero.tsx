@@ -34,7 +34,7 @@ export function Hero() {
         className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0"
       >
         <h1 className="text-2xl md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-          Hello, I'm Antoni Gapiński <br />{" "}
+          Hello, I&apos;m Antoni Gapiński <br />{" "}
           <p className="mt-2 bg-gradient-to-tr from-emerald-300/50 via-emerald-500 to-emerald-900/50 bg-clip-text">
             Frontend Developer
           </p>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { motion } from "motion/react";
 
@@ -21,7 +21,7 @@ const ProjectCard = ({
   github,
 }: Props) => {
   const [isExpand, setIsExpand] = useState(false);
-  let text = isExpand ? description : `${description.slice(0, 153)}...`;
+  const text = isExpand ? description : `${description.slice(0, 153)}...`;
   const handleExpand = () => {
     setIsExpand((prevState) => !prevState);
   };

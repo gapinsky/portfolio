@@ -38,9 +38,9 @@ const AboutMe = () => {
             I love learning new technologies and testing them in practice. My
             specialty is React, TypeScript, and Tailwind, but I enjoy exploring
             other frontend tools and libraries. I value well-written code,
-            application performance, and intuitive interfaces. I’m not afraid of
-            challenges and constantly improve my skills to deliver the best
-            possible solutions.
+            application performance, and intuitive interfaces. I&apos;m not
+            afraid of challenges and constantly improve my skills to deliver the
+            best possible solutions.
           </p>
         </motion.div>
         <motion.div
@@ -50,7 +50,7 @@ const AboutMe = () => {
           whileInView="visible"
           viewport={{ ...animationVariants.viewport }}
         >
-          <p className="text-xl mb-1 xl:text-2xl">Soft Skills: </p>
+          <p className="text-xl mb-1 xl:text-2xl">Soft Skills </p>
           <ul className=" ml-1 space-y-2 tracking-tight xl:text-xl">
             <li>English - B2</li>
             <li>Problem solving and logical thinking</li>
@@ -70,7 +70,7 @@ const AboutMe = () => {
           viewport={{ ...animationVariants.viewport }}
         >
           <p className="text-emerald-500 mb-1 text-xl xl:text-2xl">
-            Technical skills:
+            Technical skills
           </p>
           <ul className=" ml-1 space-y-2 xl:text-xl">
             <li className="flex items-center ">
