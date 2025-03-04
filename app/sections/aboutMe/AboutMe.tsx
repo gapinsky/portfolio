@@ -1,5 +1,4 @@
 import Image from "next/image";
-import profileImg from "../../../public/noImage.png";
 import { FileUser, MapPin, Send } from "lucide-react";
 import Carousel from "./Carousel";
 import SectionHeader from "@/components/ui/SectionHeader";
@@ -44,7 +43,7 @@ const AboutMe = () => {
           </p>
         </motion.div>
         <motion.div
-          className=" p-3 order-4 md:order-3 md:col-span-7  xl:col-span-3 xl:px-8 xl:order-4 xl:pt-5"
+          className=" p-3 order-4 md:order-3 md:col-span-7  xl:col-span-3  xl:px-8 xl:order-4 xl:pt-5"
           variants={animationVariants}
           initial="initial"
           whileInView="visible"
@@ -63,7 +62,7 @@ const AboutMe = () => {
           </ul>
         </motion.div>
         <motion.div
-          className=" p-3 order-3 md:order-4  md:col-span-5 xl:px-8 xl:col-span-2  xl:order-3 xl:pt-5 "
+          className=" p-3 order-3 md:order-4  md:col-span-5 xl:px-8 xl:col-span-2 xl:order-3 xl:pt-5 "
           variants={animationVariants}
           initial="initial"
           whileInView="visible"
@@ -72,7 +71,7 @@ const AboutMe = () => {
           <p className="text-emerald-500 mb-1 text-xl xl:text-2xl">
             Technical skills
           </p>
-          <ul className=" ml-1 space-y-2 xl:text-xl">
+          <ul className=" ml-1 space-y-2 xl:text-xl ">
             <li className="flex items-center ">
               <Image
                 src="/icons/react.png"
@@ -163,9 +162,11 @@ const AboutMe = () => {
           viewport={{ ...animationVariants.viewport }}
         >
           <Image
-            src={profileImg}
+            src="/images/portrait.webp"
+            width={250}
+            height={300}
             alt="My portrait picture"
-            className="mx-auto rounded-md mb-5"
+            className="mx-auto rounded-md mb-5 "
           />
           <div className="mx-auto  w-fit xl:text-lg">
             <p className="flex items-center my-3 ">
