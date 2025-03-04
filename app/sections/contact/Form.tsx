@@ -37,7 +37,7 @@ const Form = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
     setIsLoading(true);
     const templateParams = {
       from_name: data.name,
@@ -45,26 +45,24 @@ const Form = () => {
       message: data.message,
     };
 
-    emailjs
-      .send(
+    try {
+      await emailjs.send(
         "portfolio",
         `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`,
         templateParams,
         process.env.NEXT_PUBLIC_USER_ID ?? ""
-      )
-      .then(
-        function () {
-          reset();
-          setIsLoading(false);
-          toast(
-            "✅ Thanks for reaching me out. I will get back to You as soon as possible!"
-          );
-        },
-        function (error) {
-          setIsLoading(false);
-          toast("⚠️ Something went wrong, Your message was not sent.");
-        }
       );
+
+      reset();
+      toast(
+        "✅ Thanks for reaching me out. I will get back to you as soon as possible!"
+      );
+    } catch (error) {
+      console.error("Email sending error:", error);
+      toast("⚠️ Something went wrong, your message was not sent.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
