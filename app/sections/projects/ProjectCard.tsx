@@ -78,14 +78,14 @@ const ProjectCard = ({
         <div className=" flex items-center justify-end">
           <a
             href={github}
-            target="blank"
+            target="_blank"
             className="px-2 py-0.5 rounded-md xl:text-lg bg-neutral-300 text-neutral-800 mr-5 "
           >
             Source code
           </a>
           <a
             href={link}
-            target="blank"
+            target="_blank"
             className="flex w-fit bg-gradient-to-tr text-neutral-300 from-emerald-400 via-emerald-400/50 to-emerald-400/30 px-2 py-0.5 rounded-md xl:text-lg"
           >
             Visit

@@ -4,8 +4,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin", "latin-ext"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Antoni Gapiński",
+  title: "Antoni Gapiński - React Developer",
   description: "React Frontend developer",
+  icons: {
+    icon: "/icons/student.png",
+  },
 };
 
 export default function RootLayout({
