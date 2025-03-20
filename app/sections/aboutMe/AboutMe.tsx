@@ -38,12 +38,12 @@ const AboutMe = () => {
             specialty is React, TypeScript, and Tailwind, but I enjoy exploring
             other frontend tools and libraries. I value well-written code,
             application performance, and intuitive interfaces.
-            <br /> I'm currently studying Computer Science at Koszalin
+            <br /> I&apos;m currently studying Computer Science at Koszalin
             University of Technology (part-time), which allows me to combine
             academic knowledge with practical experience. I actively work on
             personal projects and continuously improve my skills to deliver the
             best possible solutions.
-            <br /> I'm not afraid of challenges, and I thrive in dynamic
+            <br /> I&apos;m not afraid of challenges, and I thrive in dynamic
             environments where I can learn and grow as a frontend developer.
           </p>
         </motion.div>
