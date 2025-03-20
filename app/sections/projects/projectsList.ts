@@ -1,21 +1,21 @@
 export const projectsList = [
   {
-    title: "Kmtech-fix ",
+    title: "Rawg - copy",
     description:
-      "A single-page application created for a real customer. The site is fully responsive and includes 4 sections: main, about us, services and contact. Contact form handling done with react-hook-form, validation - zod. Mail handling - emailJS. Animation using motion. Accordion components and reusable service cards displayed dynamically. The most difficult task for me was to design the application according to the client's guidelines, in order to do this I had to learn Figma, which I didn't know before. This project demonstrates my skills: building responsive web applications using React and Typescript, creating animations, styling using Tailwind, semantics, creating components, knowing JSX, dynamically displaying information, working with forms and working with customers. ",
-    image: "/thumbnails/kmtechfixThumbnail.webp",
+      "I created a fully responsive application inspired by the RAWG.io platform, using the official RAWG API. The project was designed and built from the ground up, offering a modern interface with support for light and dark modes. The app features a game search with a dynamic list of suggestions, making it easy to quickly find titles of interest. The list of game genres is pulled directly from the API, and each category has its own dedicated sub-page. In order to optimise performance, unlimited scrolling of the games list (Infinite Scroll) has been implemented, allowing successive results to load smoothly. Clicking on a game tile takes the user to a detailed title page with information on platforms, publisher, age category and game rating. In addition, the user has access to a gallery of screenshots and gameplay footage in the form of a carousel, a list of similar titles and links to shops where the game can be purchased. A review chart showing the distribution of user opinions is generated based on community ratings. The app enables library and wishlist management, allowing users to add games and dynamically filter to quickly find items of interest. Thanks to modern technology and performance optimisation, the app provides a smooth and intuitive user experience.",
+    image: "/thumbnails/rawgThumbnail.webp",
     tools: [
       "React",
       "Typescript",
       "Tailwind",
-      "Motion",
-      "Zod",
-      "React Hook Form",
-      "Figma",
-      "EmailJS",
+      "Shadcn",
+      "React Query",
+      "React Router",
+      "Rest API",
+      "Context API",
     ],
-    link: "https://kmechfix.vercel.app/",
-    github: "https://github.com/gapinsky/kmechfix",
+    link: "https://rawg-copy-gapinski.vercel.app/",
+    github: "https://github.com/gapinsky/rawg-copy",
   },
   {
     title: "EverythingShop",
@@ -36,6 +36,24 @@ export const projectsList = [
     github: "https://github.com/gapinsky/fake-store",
   },
   {
+    title: "Kmtech-fix ",
+    description:
+      "A single-page application created for a real customer. The site is fully responsive and includes 4 sections: main, about us, services and contact. Contact form handling done with react-hook-form, validation - zod. Mail handling - emailJS. Animation using motion. Accordion components and reusable service cards displayed dynamically. The most difficult task for me was to design the application according to the client's guidelines, in order to do this I had to learn Figma, which I didn't know before. This project demonstrates my skills: building responsive web applications using React and Typescript, creating animations, styling using Tailwind, semantics, creating components, knowing JSX, dynamically displaying information, working with forms and working with customers. ",
+    image: "/thumbnails/kmtechfixThumbnail.webp",
+    tools: [
+      "React",
+      "Typescript",
+      "Tailwind",
+      "Motion",
+      "Zod",
+      "React Hook Form",
+      "Figma",
+      "EmailJS",
+    ],
+    link: "https://kmechfix.vercel.app/",
+    github: "https://github.com/gapinsky/kmechfix",
+  },
+  {
     title: "Portfolio Website",
     description:
       "My first project built using nextJS. I chose nextJs because of the AcernityUi component library, which I really wanted to try out. Contact form handling done with react-hook-form, validation - zod. Mail handling - emailJS. I designed the look of the app myself in Figma. I think this is a valuable project demonstrating my ability to work with technologies that are new to me (nextJS), libraries (AcernityUI) and technical documentation.",
@@ -50,14 +68,5 @@ export const projectsList = [
     ],
     link: "https://kmechfix.vercel.app/",
     github: "https://github.com/gapinsky/portfolio",
-  },
-  {
-    title: "Hoodmood",
-    description:
-      "Single page app created for a real customer. I made the site over a year ago when I started learning javascript. The application is fully responsive and contains a lot of reactive components, such as an accordion, a sliding graphic (table) on small screens, buttons, links, a map with the location, cards of instructors after clicking which a modal with more information appears. I am most satisfied with the dynamic price list which, after clicking on a category button, displays a list of classes and their price, as this was a challenge for me at the time. In addition, the site includes a contact form, validation using regular expressions in javascript, the emailJS library is responsible for the sending process. For styling and animation I used SCSS. After sending a message from the form, a confirmation modal appears.",
-    image: "/thumbnails/hoodThumbnail.webp",
-    tools: ["HTML", "SCSS", "JavaScript", "RestAPI", "EmailJS"],
-    link: "https://hoodmood.pl",
-    github: "https://github.com/gapinsky/hoodmood",
   },
 ];

@@ -37,9 +37,14 @@ const AboutMe = () => {
             I love learning new technologies and testing them in practice. My
             specialty is React, TypeScript, and Tailwind, but I enjoy exploring
             other frontend tools and libraries. I value well-written code,
-            application performance, and intuitive interfaces. I&apos;m not
-            afraid of challenges and constantly improve my skills to deliver the
+            application performance, and intuitive interfaces.
+            <br /> I'm currently studying Computer Science at Koszalin
+            University of Technology (part-time), which allows me to combine
+            academic knowledge with practical experience. I actively work on
+            personal projects and continuously improve my skills to deliver the
             best possible solutions.
+            <br /> I'm not afraid of challenges, and I thrive in dynamic
+            environments where I can learn and grow as a frontend developer.
           </p>
         </motion.div>
         <motion.div
@@ -75,7 +80,7 @@ const AboutMe = () => {
             <li className="flex items-center ">
               <Image
                 src="/icons/react.png"
-                alt="react.js icon"
+                alt="react icon"
                 width={20}
                 height={20}
                 className="mr-2"
@@ -85,7 +90,7 @@ const AboutMe = () => {
             <li className="flex items-center ">
               <Image
                 src="/icons/ts.png"
-                alt="react.js icon"
+                alt="typescript icon"
                 width={20}
                 height={20}
                 className="mr-2 "
@@ -95,7 +100,7 @@ const AboutMe = () => {
             <li className="flex items-center ">
               <Image
                 src="/icons/router.png"
-                alt="react.js icon"
+                alt="react router icon"
                 width={20}
                 height={20}
                 className="mr-2 bg-white rounded-sm"
@@ -104,18 +109,18 @@ const AboutMe = () => {
             </li>
             <li className="flex items-center ">
               <Image
-                src="/icons/redux.png"
-                alt="react.js icon"
+                src="/icons/react-query.png"
+                alt="tanstack query icon"
                 width={20}
                 height={20}
                 className="mr-2 "
               />
-              Redux
+              React Query
             </li>
             <li className="flex items-center ">
               <Image
                 src="/icons/tailwind.png"
-                alt="react.js icon"
+                alt="tailwind icon"
                 width={20}
                 height={20}
                 className="mr-2 "
@@ -125,7 +130,7 @@ const AboutMe = () => {
             <li className="flex items-center ">
               <Image
                 src="/icons/js.png"
-                alt="react.js icon"
+                alt="javascript icon"
                 width={20}
                 height={20}
                 className="mr-2 "
@@ -135,7 +140,7 @@ const AboutMe = () => {
             <li className="flex items-center ">
               <Image
                 src="/icons/css.png"
-                alt="react.js icon"
+                alt="css icon"
                 width={20}
                 height={20}
                 className="mr-2 "
@@ -145,7 +150,7 @@ const AboutMe = () => {
             <li className="flex items-center ">
               <Image
                 src="/icons/html.png"
-                alt="react.js icon"
+                alt="html icon"
                 width={20}
                 height={20}
                 className="mr-2 "
